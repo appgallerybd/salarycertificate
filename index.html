@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>প্রত্যয়নপত্র — শিক্ষক সনদ প্রস্তুতকারী</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--text:#111827;--muted:#64748b;--line:#e5e7eb;--primary:#0f766e;--primary2:#115e59;--soft:#ecfdf5;--danger:#b91c1c;--shadow:0 12px 40px rgba(15,23,42,.08);--radius:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 10% 0,#dff7f1 0,transparent 28%),var(--bg);color:var(--text);font-family:"Noto Sans Bengali",sans-serif;-webkit-font-smoothing:antialiased}.app{max-width:1240px;margin:auto;padding:22px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}.brand{display:flex;align-items:center;gap:13px}.brandmark{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#0f766e,#14b8a6);display:grid;place-items:center;color:#fff;box-shadow:0 10px 24px rgba(15,118,110,.25)}.brandmark svg{width:26px}.brand h1{font-size:21px;margin:0 0 2px;font-weight:800}.brand p{margin:0;color:var(--muted);font-size:12px}.actions{display:flex;gap:10px}.btn{border:0;border-radius:13px;padding:11px 15px;font:600 14px inherit;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.18s transform,.18s box-shadow,.18s background}.btn:hover{transform:translateY(-1px)}.btn.secondary{background:#fff;color:#334155;border:1px solid var(--line)}.btn.primary{background:linear-gradient(135deg,var(--primary),#0d9488);color:#fff;box-shadow:0 8px 20px rgba(15,118,110,.22)}.btn.danger{color:var(--danger);background:#fff;border:1px solid #fecaca}.btn svg{width:17px;height:17px}.layout{display:grid;grid-template-columns:minmax(360px,470px) 1fr;gap:22px;align-items:start}.panel{background:rgba(255,255,255,.92);border:1px solid rgba(226,232,240,.9);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.panelhead{padding:20px 20px 15px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.panelhead h2{font-size:17px;margin:0;font-weight:800}.panelhead span{font-size:12px;color:var(--muted)}.form{padding:18px}.section{margin-bottom:20px}.section:last-child{margin-bottom:0}.section-title{display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;margin-bottom:11px}.section-title .num{width:24px;height:24px;border-radius:8px;background:var(--soft);color:var(--primary);display:grid;place-items:center;font-size:12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#475569}.field input,.field select{width:100%;border:1px solid #dbe1e8;background:#fff;border-radius:12px;padding:11px 12px;font:500 14px inherit;color:var(--text);outline:none;transition:.15s border,.15s box-shadow}.field input:focus,.field select:focus{border-color:#5eead4;box-shadow:0 0 0 4px rgba(20,184,166,.10)}.help{font-size:11px;color:var(--muted);margin-top:5px}.period{display:grid;grid-template-columns:1fr 1fr;gap:10px}.switch{display:flex;gap:9px;align-items:center;margin-top:9px;font-size:12px;color:#475569}.switch input{accent-color:var(--primary)}.teacher-type{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.choice{position:relative}.choice input{position:absolute;opacity:0}.choice label{display:block;border:1px solid var(--line);border-radius:12px;padding:11px;text-align:center;font-size:12px;font-weight:700;cursor:pointer;background:#fff}.choice input:checked+label{border-color:#5eead4;background:var(--soft);color:var(--primary)}.sticky{position:sticky;bottom:12px;padding-top:12px;background:linear-gradient(transparent,#fff 35%)}.preview-wrap{padding:18px;background:#eef2f7;min-height:700px}.preview-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.preview-toolbar strong{font-size:14px}.status{font-size:11px;color:var(--muted)}.paper{width:min(100%,794px);margin:auto;background:#fff;min-height:1123px;padding:64px 68px 58px;box-shadow:0 16px 50px rgba(15,23,42,.13);color:#111;position:relative}.paper:before{content:"";position:absolute;inset:28px;border:1px solid #d7d7d7;pointer-events:none}.doc-header{text-align:center;margin-bottom:24px}.doc-title{font-size:21px;font-weight:800;line-height:1.5;margin:0}.doc-address{font-size:13px;line-height:1.7;margin:2px 0 0}.cert-title{text-align:center;font-size:23px;font-weight:800;text-decoration:underline;text-underline-offset:6px;margin:25px 0 20px}.doc-body{font-size:14px;line-height:2.08;text-align:justify}.doc-body p{margin:0 0 10px}.inline{font-weight:700}.signature{margin-top:48px;font-size:14px;line-height:1.65}.signature .role{font-weight:800;margin-bottom:3px}.signature .name{font-weight:800}.mobile-actions{display:none}.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#111827;color:#fff;border-radius:12px;padding:10px 15px;font-size:12px;transition:.2s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:900px){.layout{grid-template-columns:1fr}.preview-wrap{min-height:auto}.paper{padding:52px 48px;min-height:1000px}.mobile-actions{display:flex;position:sticky;bottom:0;z-index:10;padding:10px;background:rgba(245,247,251,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);gap:9px}.mobile-actions .btn{flex:1}.topbar .actions{display:none}}@media(max-width:560px){.app{padding:12px}.topbar{margin-bottom:13px}.brandmark{width:42px;height:42px;border-radius:13px}.brand h1{font-size:17px}.brand p{font-size:10px}.panelhead{padding:16px}.form{padding:14px}.grid{grid-template-columns:1fr}.field.full{grid-column:auto}.paper{padding:42px 30px;min-height:900px}.paper:before{inset:18px}.doc-title{font-size:18px}.doc-address{font-size:11px}.cert-title{font-size:20px;margin:20px 0 15px}.doc-body{font-size:11px;line-height:2}.signature{margin-top:34px;font-size:11px}.preview-wrap{padding:12px}.preview-toolbar{margin-bottom:9px}.actions{width:100%}}
+@media print{body{background:#fff}.topbar,.panel,.preview-toolbar,.mobile-actions{display:none!important}.app{padding:0}.layout{display:block}.preview-wrap{padding:0;background:#fff}.paper{box-shadow:none;margin:0;width:210mm;min-height:297mm;padding:18mm}.paper:before{inset:7mm}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><div class="brandmark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5V5.8A1.8 1.8 0 0 1 5.8 4H20v15H5.8A1.8 1.8 0 0 0 4 20.8"/><path d="M4 19.5A1.8 1.8 0 0 1 5.8 18H20"/><path d="M8 8h8M8 12h6"/></svg></div><div><h1>প্রত্যয়নপত্র প্রস্তুতকারী</h1><p>শিক্ষক/শিক্ষিকার মাসিক প্রত্যয়নপত্র — দ্রুত, নির্ভুল ও সহজ</p></div></div>
+  <div class="actions"><button class="btn secondary" id="clearBtn">সব তথ্য মুছুন</button><button class="btn primary" id="pdfBtn">PDF ডাউনলোড</button></div>
+</header>
+<div class="layout">
+<section class="panel">
+ <div class="panelhead"><div><h2>তথ্য পূরণ করুন</h2><span>তথ্য স্বয়ংক্রিয়ভাবে এই ডিভাইসে সংরক্ষিত থাকবে</span></div></div>
+ <form class="form" id="form">
+  <div class="section"><div class="section-title"><span class="num">১</span>মক্তবের তথ্য</div><div class="grid">
+   <div class="field full"><label>মক্তবের নাম</label><input id="centerName" placeholder="মক্তবের নাম লিখুন" required></div>
+   <div class="field full"><label>মক্তবের ঠিকানা</label><input id="centerAddress" placeholder="গ্রাম, ডাকঘর, উপজেলা, জেলা লিখুন" required></div>
+   <div class="field"><label>উপজেলা</label><input id="upazila" placeholder="উপজেলার নাম" required></div>
+   <div class="field"><label>জেলা</label><input id="district" placeholder="জেলার নাম" required></div>
+  </div></div>
+  <div class="section"><div class="section-title"><span class="num">২</span>শিক্ষক/শিক্ষিকার তথ্য</div><div class="grid">
+   <div class="field full"><label>নাম</label><input id="teacherName" placeholder="শিক্ষক/শিক্ষিকার নাম" required></div>
+   <div class="field"><label>পিতার নাম</label><input id="fatherName" placeholder="পিতার নাম" required></div>
+   <div class="field"><label>মাতার নাম</label><input id="motherName" placeholder="মাতার নাম" required></div>
+   <div class="field full"><label>শিক্ষক/শিক্ষিকার ঠিকানা</label><input id="teacherAddress" placeholder="গ্রাম, ডাকঘর, উপজেলা, জেলা" required></div>
+  </div></div>
+  <div class="section"><div class="section-title"><span class="num">৩</span>কেন্দ্র ও পাঠদানের তথ্য</div><div class="grid">
+   <div class="field full"><label>মক্তবের ধরন</label><div class="teacher-type">
+    <div class="choice"><input type="radio" name="centerType" id="pre" value="প্রাক প্রাথমিক"><label for="pre">প্রাক প্রাথমিক</label></div>
+    <div class="choice"><input type="radio" name="centerType" id="easy" value="সহজ কুরআন শিক্ষা"><label for="easy">সহজ কুরআন শিক্ষা</label></div>
+    <div class="choice"><input type="radio" name="centerType" id="adult" value="বয়স্ক কুরআন শিক্ষা"><label for="adult">বয়স্ক কুরআন শিক্ষা</label></div>
+    <div class="choice"><input type="radio" name="centerType" id="other" value="অন্যান্য"><label for="other">অন্যান্য</label></div>
+   </div></div>
+   <div class="field"><label>শিক্ষক/শিক্ষিকার ধরন</label><select id="gender"><option value="শিক্ষক">পুরুষ — শিক্ষক</option><option value="শিক্ষিকা">মহিলা — শিক্ষিকা</option></select></div>
+   <div class="field"><label>কেন্দ্র কোড নম্বর</label><input id="centerCode" inputmode="numeric" placeholder="কেন্দ্র কোড" required></div>
+   <div class="field"><label>উপস্থিতির হার (%)</label><input id="attendance" type="number" min="0" max="100" step="1" placeholder="যেমন ৮৫" required></div>
+  </div></div>
+  <div class="section"><div class="section-title"><span class="num">৪</span>প্রত্যয়নকাল</div><div class="period">
+   <div class="field"><label>শুরুর মাস</label><input id="startMonth" type="month" required></div>
+   <div class="field"><label>শেষের মাস</label><input id="endMonth" type="month" required></div>
+  </div><div class="switch"><input type="checkbox" id="active" checked><label for="active">বর্তমান কেন্দ্রটি সচল রয়েছে</label></div></div>
+  <div class="section"><div class="section-title"><span class="num">৫</span>সভাপতির তথ্য</div><div class="grid">
+   <div class="field full"><label>সভাপতির নাম</label><input id="presidentName" placeholder="সভাপতির নাম" required></div>
+   <div class="field full"><label>মোবাইল নম্বর</label><input id="presidentMobile" inputmode="tel" placeholder="০১XXXXXXXXX" required></div>
+  </div></div>
+  <div class="sticky"><button type="button" class="btn primary" style="width:100%" id="previewBtn">✓  প্রিভিউ আপডেট করুন</button></div>
+ </form>
+</section>
+<section class="panel">
+ <div class="preview-wrap"><div class="preview-toolbar"><strong>প্রিভিউ</strong><span class="status" id="saveStatus">তথ্য সংরক্ষিত</span></div>
+  <article class="paper" id="certificate">
+   <div class="doc-header"><h3 class="doc-title" id="pCenterName">মক্তবের নাম</h3><div class="doc-address" id="pCenterAddress">মক্তবের ঠিকানা</div></div>
+   <div class="cert-title">প্রত্যয়নপত্র</div>
+   <div class="doc-body">
+    <p>এই মর্মে প্রত্যয়ন করা যাচ্ছে যে, <span class="inline" id="pTeacherName">শিক্ষক/শিক্ষিকার নাম</span>, পিতা: <span class="inline" id="pFather">পিতার নাম</span>, মাতা: <span class="inline" id="pMother">মাতার নাম</span>, গ্রাম: <span class="inline" id="pTeacherAddress">ঠিকানা</span>।</p>
+    <p>তিনি ইসলামিক ফাউন্ডেশন কর্তৃক পরিচালিত নৈতিকতা ও ধর্মীয় মূল্যবোধ উন্নয়নে মসজিদভিত্তিক শিশু ও গণশিক্ষা কার্যক্রম (৮ম পর্যায়) প্রকল্পের <span class="inline" id="pType">সহজ কুরআন শিক্ষা</span> কেন্দ্রের একজন নিয়মিত <span class="inline" id="pGender">শিক্ষক</span>, কেন্দ্র কোড নম্বরঃ <span class="inline" id="pCode">—</span>। <span id="pActive">বর্তমান কেন্দ্রটি সচল রয়েছে।</span></p>
+    <p>তিনি <span class="inline" id="pPeriod">—</span> উক্ত কেন্দ্রে নিয়মিত পাঠদান করেছেন। অত্র শিক্ষা কেন্দ্রে শিক্ষার্থীর উপস্থিতির হার <span class="inline" id="pAttendance">—</span>% যা অত্যন্ত সন্তোষজনক এবং পাঠদানের অগ্রগতির মানও বেশ ভাল।</p>
+    <p>এমতাবস্থায়, তার <span class="inline" id="pRecommendation">—</span> সম্মানীভাতা প্রদানের জন্য বিশেষভাবে সুপারিশ করছি।</p>
+    <p>আমি তাহার সার্বিক মঙ্গল কামনা করছি।</p>
+   </div>
+   <div class="signature"><div class="role">সভাপতি</div><div class="name" id="pPresident">সভাপতির নাম</div><div id="pSignCenter">মক্তবের নাম</div><div id="pSignLocation">উপজেলা, জেলা।</div><div>মোবাইল নংঃ <span id="pMobile">—</span></div></div>
+  </article>
+ </div>
+</section>
+</div>
+<div class="mobile-actions"><button class="btn secondary" id="mobileClear">মুছুন</button><button class="btn primary" id="mobilePdf">PDF ডাউনলোড</button></div>
+</div><div class="toast" id="toast"></div>
+<script>
+const $=id=>document.getElementById(id);
+const fields=['centerName','centerAddress','upazila','district','teacherName','fatherName','motherName','teacherAddress','gender','centerCode','attendance','startMonth','endMonth','presidentName','presidentMobile','active'];
+const STORAGE='certificate-builder-v1';
+const bnDigits=n=>String(n).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
+const months=['জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে','জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর'];
+function monthLabel(v){if(!v)return '—';const [y,m]=v.split('-');return `${months[Number(m)-1]}-${bnDigits(y)} খ্রি.`}
+function monthCount(a,b){if(!a||!b)return 1;const [ay,am]=a.split('-').map(Number),[by,bm]=b.split('-').map(Number);return (by-ay)*12+(bm-am)+1}
+function ordinal(n){const words=['শূন্য','এক','দুই','তিন','চার','পাঁচ','ছয়','সাত','আট','নয়','দশ','এগারো','বারো'];return words[n]||String(n)}
+function periodText(a,b){const c=monthCount(a,b), s=monthLabel(a), e=monthLabel(b); if(c<=1)return `${s} মাসে`; return `${s} থেকে ${e.replace(' খ্রি.','')} মাস পর্যন্ত`}
+function recommendation(a,b){const c=monthCount(a,b), s=monthLabel(a), e=monthLabel(b); if(c<=1)return `${s} মাসের`; return `${s} থেকে ${e.replace(' খ্রি.','')} মাস পর্যন্ত ${bnDigits(String(c).padStart(2,'0'))} (${ordinal(c)}) মাসের`}
+function save(){const data={};fields.forEach(id=>data[id]=$(id).type==='checkbox'?$(id).checked:$(id).value);data.centerType=document.querySelector('input[name=centerType]:checked')?.value||'';localStorage.setItem(STORAGE,JSON.stringify(data));$('saveStatus').textContent='এই ডিভাইসে সংরক্ষিত';}
+function load(){try{const d=JSON.parse(localStorage.getItem(STORAGE)||'null');if(!d)return;fields.forEach(id=>{if(d[id]!==undefined){if($(id).type==='checkbox')$(id).checked=d[id];else $(id).value=d[id]}});if(d.centerType){const r=[...document.querySelectorAll('input[name=centerType]')].find(x=>x.value===d.centerType);if(r)r.checked=true}}catch(e){}}
+function update(){
+ const type=document.querySelector('input[name=centerType]:checked')?.value||'সহজ কুরআন শিক্ষা';
+ $('pCenterName').textContent=$('centerName').value||'মক্তবের নাম';$('pCenterAddress').textContent=$('centerAddress').value||'মক্তবের ঠিকানা';
+ $('pTeacherName').textContent=$('teacherName').value||'শিক্ষক/শিক্ষিকার নাম';$('pFather').textContent=$('fatherName').value||'পিতার নাম';$('pMother').textContent=$('motherName').value||'মাতার নাম';$('pTeacherAddress').textContent=$('teacherAddress').value||'ঠিকানা';
+ $('pType').textContent=type;$('pGender').textContent=$('gender').value;$('pCode').textContent=$('centerCode').value?bnDigits($('centerCode').value):'—';$('pAttendance').textContent=$('attendance').value?bnDigits($('attendance').value):'—';
+ $('pActive').textContent=$('active').checked?'বর্তমান কেন্দ্রটি সচল রয়েছে।':'';
+ $('pPeriod').textContent=periodText($('startMonth').value,$('endMonth').value);$('pRecommendation').textContent=recommendation($('startMonth').value,$('endMonth').value);
+ $('pPresident').textContent=$('presidentName').value||'সভাপতির নাম';$('pSignCenter').textContent=$('centerName').value||'মক্তবের নাম';$('pSignLocation').textContent=`${$('upazila').value||'উপজেলা'}, ${$('district').value||'জেলা'}।`;$('pMobile').textContent=$('presidentMobile').value||'—';save();
+}
+function toast(t){$('toast').textContent=t;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),1800)}
+async function makePdf(){update();const el=$('certificate');toast('PDF প্রস্তুত হচ্ছে…');await document.fonts?.ready;const canvas=await html2canvas(el,{scale:2.5,useCORS:true,backgroundColor:'#ffffff',logging:false});const {jsPDF}=window.jspdf;const pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4',compress:true});const pw=210,ph=297;const ratio=Math.min(pw/canvas.width,ph/canvas.height);const w=canvas.width*ratio,h=canvas.height*ratio;pdf.addImage(canvas.toDataURL('image/jpeg',.96),'JPEG',(pw-w)/2,(ph-h)/2,w,h,undefined,'FAST');const name=($('teacherName').value||'শিক্ষক').replace(/[\\/:*?"<>|]/g,'_');pdf.save(`প্রত্যয়নপত্র-${name}.pdf`);toast('PDF ডাউনলোড হয়েছে');}
+$('form').addEventListener('input',update);$('form').addEventListener('change',update);$('previewBtn').onclick=()=>{update();$('certificate').scrollIntoView({behavior:'smooth',block:'start'});toast('প্রিভিউ আপডেট হয়েছে')};$('pdfBtn').onclick=makePdf;$('mobilePdf').onclick=makePdf;
+function clearAll(){if(!confirm('সব সংরক্ষিত তথ্য মুছে ফেলবেন?'))return;localStorage.removeItem(STORAGE);$('form').reset();$('pre').checked=false;$('easy').checked=true;update();toast('সব তথ্য মুছে ফেলা হয়েছে')}
+$('clearBtn').onclick=clearAll;$('mobileClear').onclick=clearAll;load();if(!document.querySelector('input[name=centerType]:checked'))$('easy').checked=true;update();
+</script>
+</body></html>
