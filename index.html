@@ -1,1 +1,2562 @@
-<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#07111f"><title>প্রত্যয়নপত্র প্রস্তুতকারী</title><link rel="stylesheet" href="https://fonts.maateen.me/solaiman-lipi/font.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script><style>:root{--bg:#f4f7fb;--ink:#101828;--muted:#667085;--line:#e4e7ec;--primary:#0b6b62;--primary2:#0f8b7e;--soft:#e9f7f4;--shadow:0 16px 45px rgba(16,24,40,.09);--r:22px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 8% 0,#dff7f2,transparent 30%),var(--bg);color:var(--ink);font-family:'SolaimanLipi','Solaiman Lipi',serif;-webkit-font-smoothing:antialiased}.app{max-width:1240px;margin:auto;padding:20px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:18px}.brand{display:flex;align-items:center;gap:12px}.brandmark{width:46px;height:46px;border-radius:15px;background:linear-gradient(145deg,#073f3a,#14a894);display:grid;place-items:center;color:white;box-shadow:0 12px 26px #0b6b6230}.brandmark svg{width:25px}.brand h1{font-size:21px;line-height:1.1;margin:0;font-weight:700}.actions{display:flex;gap:9px}.btn{border:0;border-radius:13px;padding:10px 15px;font:700 14px inherit;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:7px;transition:.18s}.btn:hover{transform:translateY(-1px)}.btn.primary{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;box-shadow:0 9px 20px #0b6b6230}.btn.secondary{background:#fff;border:1px solid var(--line);color:#344054}.layout{display:grid;grid-template-columns:minmax(360px,480px) 1fr;gap:20px;align-items:start}.panel{background:#ffffffea;border:1px solid #e6eaf0;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}.panelhead{padding:17px 19px;border-bottom:1px solid var(--line)}.panelhead h2{margin:0;font-size:17px}.form{padding:17px}.section{padding:0 0 18px;margin-bottom:18px;border-bottom:1px solid #eef1f5}.section:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}.section-title{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:700;margin-bottom:11px}.icon{width:31px;height:31px;border-radius:10px;background:linear-gradient(145deg,#e8f7f4,#d8f0eb);display:grid;place-items:center;color:var(--primary);flex:none}.icon svg{width:18px;height:18px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{min-width:0;display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#475467}.field input,.field select{width:100%;min-width:0;height:43px;border:1px solid #d9dee8;border-radius:12px;background:#fff;padding:8px 11px;color:var(--ink);font:500 14px inherit;outline:0}.field input:focus,.field select:focus{border-color:#65cfc0;box-shadow:0 0 0 4px #14b8a614}.choice-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.choice{position:relative}.choice input{position:absolute;opacity:0;pointer-events:none}.choice label{height:42px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;background:#fff;font-weight:700;font-size:13px;cursor:pointer}.choice input:checked+label{background:var(--soft);border-color:#67cfc1;color:var(--primary);box-shadow:inset 0 0 0 1px #67cfc1}.period{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px}.sticky{margin-top:12px}.mobile-actions{display:none}.preview-wrap{padding:18px;background:#edf2f7}.preview-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.status{font-size:11px;color:var(--muted)}.paper{width:210mm;height:297mm;margin:auto;background:#fff;box-shadow:0 18px 55px #10182820;color:#111;padding:12.7mm;overflow:hidden;position:relative;font-family:'SolaimanLipi','Solaiman Lipi',serif}.paper-content{width:100%;height:100%;display:flex;flex-direction:column}.doc-header{text-align:center}.doc-title{font-size:20px;font-weight:700;line-height:1.25;margin:0}.doc-address{font-size:13px;line-height:1.35;margin:2px 0 7px;padding-bottom:7px;border-bottom:1px solid #111}.cert-title{text-align:center;font-size:23px;font-weight:700;line-height:1.2;margin:17px 0 13px}.doc-body{font-size:14px;line-height:1.62;text-align:justify}.doc-body p{margin:0 0 7px}.inline{font-weight:700}.signature{margin-top:auto;margin-left:auto;width:44%;text-align:center;font-size:14px;line-height:1.45;padding-bottom:3px}.signature .role{font-weight:700}.signature .blank{height:28px}.signature .name{font-weight:700}.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,15px);opacity:0;background:#101828;color:#fff;padding:9px 14px;border-radius:11px;font-size:12px;pointer-events:none;transition:.2s;z-index:30}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:900px){.layout{grid-template-columns:1fr}.topbar .actions{display:none}.mobile-actions{display:flex;gap:8px;position:sticky;bottom:0;z-index:15;padding:9px;background:#f4f7fbeF;backdrop-filter:blur(12px);border-top:1px solid var(--line)}.mobile-actions .btn{flex:1}.preview-wrap{padding:12px}.paper{transform-origin:top center;max-width:100%;height:auto;min-height:297mm;aspect-ratio:210/297}}@media(max-width:560px){.app{padding:11px}.brand h1{font-size:18px}.brandmark{width:42px;height:42px}.panelhead,.form{padding:14px}.grid{grid-template-columns:1fr}.field.full{grid-column:auto}.period{grid-template-columns:1fr 1fr}.field input,.field select{height:42px}.preview-wrap{overflow-x:hidden}.paper{width:100%;height:auto;min-height:0;aspect-ratio:210/297;padding:6.5%;box-shadow:none}.doc-title{font-size:15px}.doc-address{font-size:10px}.cert-title{font-size:17px;margin:10px 0 8px}.doc-body{font-size:9px;line-height:1.48}.doc-body p{margin-bottom:4px}.signature{font-size:9px;width:44%}.signature .blank{height:18px}}@media print{body{background:#fff}.topbar,.panel,.preview-toolbar,.mobile-actions{display:none!important}.app,.layout,.preview-wrap{padding:0;margin:0;display:block;background:#fff}.paper{box-shadow:none;width:210mm;height:297mm;padding:12.7mm;margin:0}}</style></head><body><div class="app"><header class="topbar"><div class="brand"><div class="brandmark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V6.2A2.2 2.2 0 0 1 6.2 4H20v15H6.2A2.2 2.2 0 0 0 4 21"/><path d="M8 8h8M8 12h6"/></svg></div><h1>প্রত্যয়নপত্র প্রস্তুতকারী</h1></div><div class="actions"><button class="btn secondary" id="clearBtn">সব তথ্য মুছুন</button><button class="btn primary" id="pdfBtn">PDF ডাউনলোড</button><button class="btn primary" id="wordBtn">Word ডাউনলোড</button></div></header><div class="layout"><section class="panel"><div class="panelhead"><h2>তথ্য পূরণ করুন</h2></div><form class="form" id="form"><div class="section"><div class="section-title"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V9l9-6 9 6v12"/><path d="M7 21v-8h10v8M3 21h18"/></svg></span>কেন্দ্রের তথ্য</div><div class="grid"><div class="field full"><label>কেন্দ্রের নাম</label><input id="centerName" required></div><div class="field full"><label>কেন্দ্রের ঠিকানা</label><input id="centerAddress" placeholder="গ্রাম, ডাকঘর, উপজেলা, জেলা" required></div><div class="field"><label>উপজেলা</label><input id="upazila" required></div><div class="field"><label>জেলা</label><input id="district" required></div></div></div><div class="section"><div class="section-title"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c.6-4 2.8-6 6.5-6s5.9 2 6.5 6"/></svg></span>শিক্ষক/শিক্ষিকার তথ্য</div><div class="grid"><div class="field full"><label>শিক্ষক/শিক্ষিকা</label><div class="choice-row"><div class="choice"><input type="radio" name="gender" id="male" value="শিক্ষক"><label for="male">শিক্ষক</label></div><div class="choice"><input type="radio" name="gender" id="female" value="শিক্ষিকা"><label for="female">শিক্ষিকা</label></div></div></div><div class="field full"><label>নাম</label><input id="teacherName" required></div><div class="field"><label>পিতার নাম</label><input id="fatherName" required></div><div class="field"><label>মাতার নাম</label><input id="motherName" required></div><div class="field full"><label>ঠিকানা</label><input id="teacherAddress" placeholder="গ্রাম, ডাকঘর, উপজেলা, জেলা" required></div></div></div><div class="section"><div class="section-title"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V7l8-4 8 4v13"/><path d="M8 20v-6h8v6M3 20h18M9 9h6"/></svg></span>কেন্দ্র ও পাঠদানের তথ্য</div><div class="grid"><div class="field full"><label>কেন্দ্রের ধরন</label><div class="choice-row" style="grid-template-columns:1fr 1fr 1fr"><div class="choice"><input type="radio" name="centerType" id="pre" value="প্রাক প্রাথমিক"><label for="pre">প্রাক প্রাথমিক</label></div><div class="choice"><input type="radio" name="centerType" id="easy" value="সহজ কুরআন শিক্ষা"><label for="easy">সহজ কুরআন শিক্ষা</label></div><div class="choice"><input type="radio" name="centerType" id="adult" value="বয়স্ক কুরআন শিক্ষা"><label for="adult">বয়স্ক কুরআন শিক্ষা</label></div></div></div><div class="field"><label>কেন্দ্র কোড নম্বর</label><input id="centerCode" inputmode="numeric" required></div><div class="field"><label>উপস্থিতির হার (%)</label><input id="attendance" type="number" min="0" max="100" required></div></div></div><div class="section"><div class="section-title"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M7 2v4M17 2v4M3 9h18"/></svg></span>প্রত্যয়নকাল</div><div class="period"><div class="field"><label>শুরুর মাস</label><input id="startMonth" type="month" required></div><div class="field"><label>শেষের মাস</label><input id="endMonth" type="month" required></div></div></div><div class="section"><div class="section-title"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="7" r="3"/><path d="M5 21c.6-4 2.9-6 7-6s6.4 2 7 6"/><path d="M17 4.5l1.5 1.5L21 3.5"/></svg></span>সভাপতির তথ্য</div><div class="grid"><div class="field full"><label>সভাপতির নাম</label><input id="presidentName" required></div><div class="field full"><label>মোবাইল নম্বর</label><input id="presidentMobile" inputmode="tel" required></div></div></div><div class="sticky"><button type="button" class="btn primary" style="width:100%" id="previewBtn">প্রিভিউ দেখুন</button></div></form></section><section class="panel"><div class="preview-wrap"><div class="preview-toolbar"><strong>প্রিভিউ</strong><span class="status" id="saveStatus"></span></div><article class="paper" id="certificate"><div class="paper-content"><div class="doc-header"><h3 class="doc-title" id="pCenterName">কেন্দ্রের নাম</h3><div class="doc-address" id="pCenterAddress">কেন্দ্রের ঠিকানা</div></div><div class="cert-title">প্রত্যয়নপত্র</div><div class="doc-body"><p>এই মর্মে প্রত্যয়ন করা যাচ্ছে যে, <span class="inline" id="pTeacherName">শিক্ষক/শিক্ষিকার নাম</span>, পিতা: <span class="inline" id="pFather">পিতার নাম</span>, মাতা: <span class="inline" id="pMother">মাতার নাম</span>, <span class="inline" id="pTeacherAddress">ঠিকানা</span>।</p><p>তিনি ইসলামিক ফাউন্ডেশন কর্তৃক পরিচালিত নৈতিকতা ও ধর্মীয় মূল্যবোধ উন্নয়নে মসজিদভিত্তিক শিশু ও গণশিক্ষা কার্যক্রম (৮ম পর্যায়) প্রকল্পের <span class="inline" id="pType">সহজ কুরআন শিক্ষা</span> কেন্দ্রের একজন নিয়মিত <span class="inline" id="pGender">শিক্ষক</span>, কেন্দ্র কোড নম্বরঃ <span class="inline" id="pCode">—</span>।</p><p>তিনি <span class="inline" id="pPeriod">—</span> উক্ত কেন্দ্রে নিয়মিত পাঠদান করেছেন। অত্র শিক্ষা কেন্দ্রে শিক্ষার্থীর উপস্থিতির হার <span class="inline" id="pAttendance">—</span>% যা অত্যন্ত সন্তোষজনক এবং পাঠদানের অগ্রগতির মানও বেশ ভাল।</p><p>এমতাবস্থায়, তার <span class="inline" id="pRecommendation">—</span> সম্মানীভাতা প্রদানের জন্য বিশেষভাবে সুপারিশ করছি।</p><p>আমি তাহার সার্বিক মঙ্গল কামনা করছি।</p></div><div class="signature"><div class="role">সভাপতি</div><div class="blank"></div><div class="blank"></div><div class="name" id="pPresident">সভাপতির নাম</div><div id="pSignCenter">কেন্দ্রের নাম</div><div id="pSignLocation">উপজেলা, জেলা।</div><div>মোবাইল নংঃ <span id="pMobile">—</span></div></div></div></article></div></section></div><div class="mobile-actions"><button class="btn secondary" id="mobileClear">মুছুন</button><button class="btn primary" id="mobilePdf">PDF</button><button class="btn primary" id="mobileWord">Word</button></div></div><div class="toast" id="toast"></div><script>const $=id=>document.getElementById(id),fields=['centerName','centerAddress','upazila','district','teacherName','fatherName','motherName','teacherAddress','centerCode','attendance','startMonth','endMonth','presidentName','presidentMobile'];const STORAGE='certificate-builder-v2';const bnDigits=s=>String(s).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);const months=['জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে','জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর'];const words=['','এক','দুই','তিন','চার','পাঁচ','ছয়','সাত','আট','নয়','দশ','এগারো','বারো','তেরো','চৌদ্দ','পনেরো','ষোলো','সতেরো','আঠারো','উনিশ','বিশ'];function monthLabel(v){if(!v)return '—';let[y,m]=v.split('-');return `${months[+m-1]}-${bnDigits(y)} খ্রি.`}function count(a,b){if(!a||!b)return 1;let[ay,am]=a.split('-').map(Number),[by,bm]=b.split('-').map(Number);return Math.max(1,(by-ay)*12+bm-am+1)}function period(a,b){let c=count(a,b),s=monthLabel(a),e=monthLabel(b);return c===1?`${s} মাসে`:`${s} থেকে ${e.replace(' খ্রি.','')} মাস পর্যন্ত`}function rec(a,b){let c=count(a,b),s=monthLabel(a),e=monthLabel(b);return c===1?`${s} মাসের`:`${s} থেকে ${e.replace(' খ্রি.','')} মাস পর্যন্ত ${bnDigits(String(c).padStart(2,'0'))} (${words[c]||c}) মাসের`}function save(){let d={};fields.forEach(id=>d[id]=$(id).value);d.gender=document.querySelector('input[name=gender]:checked')?.value||'শিক্ষক';d.centerType=document.querySelector('input[name=centerType]:checked')?.value||'সহজ কুরআন শিক্ষা';localStorage.setItem(STORAGE,JSON.stringify(d));$('saveStatus').textContent=''}function load(){try{let d=JSON.parse(localStorage.getItem(STORAGE)||'null');if(!d)return;fields.forEach(id=>{if(d[id]!=null)$(id).value=d[id]});let g=document.querySelector(`input[name=gender][value="${d.gender}"]`),t=document.querySelector(`input[name=centerType][value="${d.centerType}"]`);if(g)g.checked=true;if(t)t.checked=true}catch(e){}}function update(){let g=document.querySelector('input[name=gender]:checked')?.value||'শিক্ষক',t=document.querySelector('input[name=centerType]:checked')?.value||'সহজ কুরআন শিক্ষা';$('pCenterName').textContent=$('centerName').value||'কেন্দ্রের নাম';$('pCenterAddress').textContent=$('centerAddress').value||'কেন্দ্রের ঠিকানা';$('pTeacherName').textContent=$('teacherName').value||'শিক্ষক/শিক্ষিকার নাম';$('pFather').textContent=$('fatherName').value||'পিতার নাম';$('pMother').textContent=$('motherName').value||'মাতার নাম';$('pTeacherAddress').textContent=$('teacherAddress').value||'ঠিকানা';$('pType').textContent=t;$('pGender').textContent=g;$('pCode').textContent=$('centerCode').value?bnDigits($('centerCode').value):'—';$('pAttendance').textContent=$('attendance').value?bnDigits($('attendance').value):'—';$('pPeriod').textContent=period($('startMonth').value,$('endMonth').value);$('pRecommendation').textContent=rec($('startMonth').value,$('endMonth').value);$('pPresident').textContent=$('presidentName').value||'সভাপতির নাম';$('pSignCenter').textContent=$('centerName').value||'কেন্দ্রের নাম';$('pSignLocation').textContent=`${$('upazila').value||'উপজেলা'}, ${$('district').value||'জেলা'}।`;$('pMobile').textContent=$('presidentMobile').value||'—';save()}function toast(t){$('toast').textContent=t;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),1600)}async function makePdf(){update();toast('PDF প্রস্তুত হচ্ছে…');await document.fonts.ready;let el=$('certificate'),canvas=await html2canvas(el,{scale:3,useCORS:true,backgroundColor:'#fff',logging:false});let{jsPDF}=window.jspdf,pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4',compress:true});pdf.addImage(canvas.toDataURL('image/jpeg',.98),'JPEG',0,0,210,297,undefined,'FAST');let n=($('teacherName').value||'শিক্ষক').replace(/[\\/:*?"<>|]/g,'_');pdf.save(`প্রত্যয়নপত্র-${n}.pdf`);toast('PDF ডাউনলোড হয়েছে')}function makeWord(){update();let clone=$('certificate').cloneNode(true);let css=`@page{size:A4;margin:0}body{margin:0;font-family:'SolaimanLipi','Solaiman Lipi',serif}.paper{width:210mm;height:297mm;padding:12.7mm;box-sizing:border-box}.doc-title{font-size:20px;font-weight:700;text-align:center}.doc-address{font-size:13px;text-align:center;border-bottom:1px solid #111;padding-bottom:7px}.cert-title{text-align:center;font-size:23px;font-weight:700;margin:17px 0 13px}.doc-body{font-size:14px;line-height:1.62;text-align:justify}.doc-body p{margin:0 0 7px}.inline{font-weight:700}.signature{margin-top:50px;margin-left:auto;width:44%;text-align:center;font-size:14px;line-height:1.45}.blank{height:28px}.name{font-weight:700}`;let html=`<!doctype html><html><head><meta charset="utf-8"><style>${css}</style></head><body>${clone.outerHTML}</body></html>`;let blob=new Blob(['\ufeff',html],{type:'application/msword'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`প্রত্যয়নপত্র-${($('teacherName').value||'শিক্ষক')}.doc`;a.click();URL.revokeObjectURL(url);toast('Word ফাইল ডাউনলোড হয়েছে')}function clearAll(){if(!confirm('সব সংরক্ষিত তথ্য মুছে ফেলবেন?'))return;localStorage.removeItem(STORAGE);$('form').reset();$('male').checked=true;$('easy').checked=true;update();toast('সব তথ্য মুছে ফেলা হয়েছে')}$('form').addEventListener('input',update);$('form').addEventListener('change',update);$('previewBtn').onclick=()=>{update();$('certificate').scrollIntoView({behavior:'smooth',block:'center'});toast('প্রিভিউ আপডেট হয়েছে')};$('pdfBtn').onclick=makePdf;$('mobilePdf').onclick=makePdf;$('wordBtn').onclick=makeWord;$('mobileWord').onclick=makeWord;$('clearBtn').onclick=clearAll;$('mobileClear').onclick=clearAll;load();if(!document.querySelector('input[name=gender]:checked'))$('male').checked=true;if(!document.querySelector('input[name=centerType]:checked'))$('easy').checked=true;update();</script></body></html>
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<meta name="theme-color" content="#07111f">
+
+<title>প্রত্যয়নপত্র প্রস্তুতকারী</title>
+
+<link rel="stylesheet"
+href="https://fonts.maateen.me/solaiman-lipi/font.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+:root{
+  --bg:#f4f7fb;
+  --ink:#101828;
+  --muted:#667085;
+  --line:#e4e7ec;
+  --primary:#0b6b62;
+  --primary2:#0f8b7e;
+  --soft:#e9f7f4;
+  --shadow:0 16px 45px rgba(16,24,40,.09);
+  --r:22px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 8% 0,#dff7f2,transparent 30%),
+    var(--bg);
+  color:var(--ink);
+  font-family:'SolaimanLipi','Solaiman Lipi',serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+.app{
+  max-width:1240px;
+  margin:auto;
+  padding:20px;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brandmark{
+  width:46px;
+  height:46px;
+  border-radius:15px;
+  background:linear-gradient(145deg,#073f3a,#14a894);
+  display:grid;
+  place-items:center;
+  color:white;
+  box-shadow:0 12px 26px #0b6b6230;
+}
+
+.brandmark svg{
+  width:25px;
+}
+
+.brand h1{
+  font-size:21px;
+  line-height:1.1;
+  margin:0;
+  font-weight:700;
+}
+
+.actions{
+  display:flex;
+  gap:9px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+  border:0;
+  border-radius:13px;
+  padding:10px 15px;
+  font:700 14px inherit;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  transition:.18s;
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+}
+
+.btn.primary{
+  background:linear-gradient(135deg,var(--primary),var(--primary2));
+  color:#fff;
+  box-shadow:0 9px 20px #0b6b6230;
+}
+
+.btn.secondary{
+  background:#fff;
+  border:1px solid var(--line);
+  color:#344054;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.layout{
+  display:grid;
+  grid-template-columns:minmax(360px,480px) 1fr;
+  gap:20px;
+  align-items:start;
+}
+
+.panel{
+  background:#ffffffea;
+  border:1px solid #e6eaf0;
+  border-radius:var(--r);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+
+.panelhead{
+  padding:17px 19px;
+  border-bottom:1px solid var(--line);
+}
+
+.panelhead h2{
+  margin:0;
+  font-size:17px;
+}
+
+.form{
+  padding:17px;
+}
+
+/* =========================
+   FORM SECTIONS
+========================= */
+
+.section{
+  padding:0 0 18px;
+  margin-bottom:18px;
+  border-bottom:1px solid #eef1f5;
+}
+
+.section:last-child{
+  border-bottom:0;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-size:15px;
+  font-weight:700;
+  margin-bottom:11px;
+}
+
+.icon{
+  width:31px;
+  height:31px;
+  border-radius:10px;
+  background:linear-gradient(145deg,#e8f7f4,#d8f0eb);
+  display:grid;
+  place-items:center;
+  color:var(--primary);
+  flex:none;
+}
+
+.icon svg{
+  width:18px;
+  height:18px;
+}
+
+/* =========================
+   FORM GRID
+========================= */
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.field{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+.field.full{
+  grid-column:1/-1;
+}
+
+.field label{
+  font-size:12px;
+  font-weight:700;
+  color:#475467;
+}
+
+.field input,
+.field select{
+  width:100%;
+  min-width:0;
+  height:43px;
+  border:1px solid #d9dee8;
+  border-radius:12px;
+  background:#fff;
+  padding:8px 11px;
+  color:var(--ink);
+  font:500 14px inherit;
+  outline:0;
+}
+
+.field input:focus,
+.field select:focus{
+  border-color:#65cfc0;
+  box-shadow:0 0 0 4px #14b8a614;
+}
+
+/* =========================
+   RADIO / CHOICE
+========================= */
+
+.choice-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+
+.choice{
+  position:relative;
+}
+
+.choice input{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+
+.choice label{
+  height:42px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:#fff;
+  font-weight:700;
+  font-size:13px;
+  cursor:pointer;
+}
+
+.choice input:checked + label{
+  background:var(--soft);
+  border-color:#67cfc1;
+  color:var(--primary);
+  box-shadow:inset 0 0 0 1px #67cfc1;
+}
+
+/* =========================
+   MONTH
+========================= */
+
+.period{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:9px;
+}
+
+.sticky{
+  margin-top:12px;
+}
+
+/* =========================
+   MOBILE ACTIONS
+========================= */
+
+.mobile-actions{
+  display:none;
+}
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview-wrap{
+  padding:18px;
+  background:#edf2f7;
+}
+
+.preview-toolbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.status{
+  font-size:11px;
+  color:var(--muted);
+}
+
+/* =========================
+   A4 CERTIFICATE
+========================= */
+
+.paper{
+  width:210mm;
+  height:297mm;
+  margin:auto;
+  background:#fff;
+  box-shadow:0 18px 55px #10182820;
+  color:#111;
+
+  /* EXACTLY 0.5 INCH */
+  padding:12.7mm;
+
+  overflow:hidden;
+  position:relative;
+
+  font-family:'SolaimanLipi','Solaiman Lipi',serif;
+}
+
+.paper-content{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.doc-header{
+  text-align:center;
+}
+
+.doc-title{
+  font-size:20px;
+  font-weight:700;
+  line-height:1.25;
+  margin:0;
+}
+
+.doc-address{
+  font-size:13px;
+  line-height:1.35;
+  margin:2px 0 7px;
+  padding-bottom:7px;
+}
+
+/*
+  FULL PAGE WIDTH BORDER
+  Under the center address
+*/
+.paper:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:29mm;
+  border-bottom:1px solid #111;
+  pointer-events:none;
+}
+
+/* =========================
+   CERTIFICATE TITLE
+========================= */
+
+.cert-title{
+  text-align:center;
+  font-size:23px;
+  font-weight:700;
+  line-height:1.2;
+  margin:17px 0 13px;
+}
+
+/* =========================
+   DOCUMENT BODY
+========================= */
+
+.doc-body{
+  font-size:14px;
+  line-height:1.62;
+  text-align:justify;
+}
+
+/*
+  No extra paragraph spacing
+*/
+.doc-body p{
+  margin:0 0 7px;
+}
+
+/*
+  One keyboard TAB equivalent
+  ≈ 2em
+*/
+.doc-body p:first-child,
+.doc-body p:nth-last-child(2),
+.doc-body p:last-child{
+  text-indent:2em;
+}
+
+/*
+  Only selected text will be bold
+*/
+.strongspot{
+  font-weight:700;
+}
+
+.inline{
+  font-weight:400;
+}
+
+/* =========================
+   SIGNATURE
+========================= */
+
+.signature{
+  margin-top:auto;
+  margin-left:auto;
+
+  width:44%;
+
+  text-align:center;
+
+  font-size:14px;
+  line-height:1.45;
+
+  padding-bottom:3px;
+}
+
+.signature .role{
+  font-weight:700;
+  margin-bottom:-2px;
+}
+
+/*
+  Two blank signature lines/spaces
+  kept intentionally compact
+*/
+.signature .blank{
+  height:4px;
+}
+
+.signature .name{
+  font-weight:700;
+}
+
+/*
+  President mobile number
+  always English digits
+*/
+.signature #pMobile{
+  font-family:Arial,sans-serif;
+  font-weight:400;
+  letter-spacing:.2px;
+}
+
+/* =========================
+   TOAST
+========================= */
+
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:20px;
+
+  transform:translate(-50%,15px);
+
+  opacity:0;
+
+  background:#101828;
+  color:#fff;
+
+  padding:9px 14px;
+
+  border-radius:11px;
+
+  font-size:12px;
+
+  pointer-events:none;
+
+  transition:.2s;
+
+  z-index:30;
+}
+
+.toast.show{
+  opacity:1;
+  transform:translate(-50%,0);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:900px){
+
+  .layout{
+    grid-template-columns:1fr;
+  }
+
+  .topbar .actions{
+    display:none;
+  }
+
+  .mobile-actions{
+    display:flex;
+
+    gap:8px;
+
+    position:sticky;
+    bottom:0;
+
+    z-index:15;
+
+    padding:9px;
+
+    background:#f4f7fbeF;
+
+    backdrop-filter:blur(12px);
+
+    border-top:1px solid var(--line);
+  }
+
+  .mobile-actions .btn{
+    flex:1;
+  }
+
+  .preview-wrap{
+    padding:12px;
+  }
+
+  .paper{
+    transform-origin:top center;
+    max-width:100%;
+    height:auto;
+    min-height:297mm;
+    aspect-ratio:210/297;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:560px){
+
+  .app{
+    padding:11px;
+  }
+
+  .brand h1{
+    font-size:18px;
+  }
+
+  .brandmark{
+    width:42px;
+    height:42px;
+  }
+
+  .panelhead,
+  .form{
+    padding:14px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .field.full{
+    grid-column:auto;
+  }
+
+  .period{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .field input,
+  .field select{
+    height:42px;
+  }
+
+  .preview-wrap{
+    overflow-x:hidden;
+  }
+
+  .paper{
+    width:100%;
+    height:auto;
+    min-height:0;
+
+    aspect-ratio:210/297;
+
+    padding:6.5%;
+
+    box-shadow:none;
+  }
+
+  .doc-title{
+    font-size:15px;
+  }
+
+  .doc-address{
+    font-size:10px;
+  }
+
+  .cert-title{
+    font-size:17px;
+    margin:10px 0 8px;
+  }
+
+  /*
+    Certificate text remains 14px
+  */
+  .doc-body{
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .doc-body p{
+    margin-bottom:4px;
+  }
+
+  .signature{
+    font-size:14px;
+    width:44%;
+  }
+
+  .signature .blank{
+    height:8px;
+  }
+}
+
+/* =========================
+   PRINT
+========================= */
+
+@media print{
+
+  body{
+    background:#fff;
+  }
+
+  .topbar,
+  .panel,
+  .preview-toolbar,
+  .mobile-actions{
+    display:none!important;
+  }
+
+  .app,
+  .layout,
+  .preview-wrap{
+    padding:0;
+    margin:0;
+    display:block;
+    background:#fff;
+  }
+
+  .paper{
+    box-shadow:none;
+    width:210mm;
+    height:297mm;
+    padding:12.7mm;
+    margin:0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<header class="topbar">
+
+  <div class="brand">
+
+    <div class="brandmark">
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M4 19V6.2A2.2 2.2 0 0 1 6.2 4H20v15H6.2A2.2 2.2 0 0 0 4 21"/>
+        <path d="M8 8h8M8 12h6"/>
+      </svg>
+
+    </div>
+
+    <h1>প্রত্যয়নপত্র প্রস্তুতকারী</h1>
+
+  </div>
+
+  <div class="actions">
+
+    <button class="btn secondary" id="clearBtn">
+      সব তথ্য মুছুন
+    </button>
+
+    <button class="btn primary" id="pdfBtn">
+      PDF ডাউনলোড
+    </button>
+
+    <button class="btn primary" id="wordBtn">
+      Word ডাউনলোড
+    </button>
+
+  </div>
+
+</header>
+
+
+<!-- =========================
+     MAIN LAYOUT
+========================= -->
+
+<div class="layout">
+
+
+<!-- =========================
+     FORM PANEL
+========================= -->
+
+<section class="panel">
+
+  <div class="panelhead">
+    <h2>তথ্য পূরণ করুন</h2>
+  </div>
+
+  <form class="form" id="form">
+
+
+<!-- =========================
+     SECTION 1
+     CENTER INFORMATION
+========================= -->
+
+<div class="section">
+
+  <div class="section-title">
+
+    <span class="icon">
+
+      <!-- Premium Center Icon -->
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+
+        <path d="M4 21V8.5L12 3l8 5.5V21"/>
+
+        <path d="M8 21v-6.5h8V21"/>
+
+        <path d="M9 10.5h6"/>
+
+        <path d="M12 7.5v6"/>
+
+        <path d="M3 21h18"/>
+
+      </svg>
+
+    </span>
+
+    কেন্দ্রের তথ্য
+
+  </div>
+
+
+  <div class="grid">
+
+    <div class="field full">
+
+      <label>
+        কেন্দ্রের নাম
+      </label>
+
+      <input
+        id="centerName"
+        required
+      >
+
+    </div>
+
+
+    <div class="field full">
+
+      <label>
+        কেন্দ্রের ঠিকানা
+      </label>
+
+      <input
+        id="centerAddress"
+        placeholder="গ্রাম, ডাকঘর, উপজেলা, জেলা"
+        required
+      >
+
+    </div>
+
+
+    <div class="field">
+
+      <label>
+        উপজেলা
+      </label>
+
+      <input
+        id="upazila"
+        required
+      >
+
+    </div>
+
+
+    <div class="field">
+
+      <label>
+        জেলা
+      </label>
+
+      <input
+        id="district"
+        required
+      >
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     SECTION 2
+     TEACHER
+========================= -->
+
+<div class="section">
+
+  <div class="section-title">
+
+    <span class="icon">
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+      >
+
+        <circle
+          cx="12"
+          cy="8"
+          r="3.2"
+        />
+
+        <path
+          d="M5.5 20c.6-4 2.8-6 6.5-6s5.9 2 6.5 6"
+        />
+
+      </svg>
+
+    </span>
+
+    শিক্ষক/শিক্ষিকার তথ্য
+
+  </div>
+
+
+  <div class="grid">
+
+
+    <!-- GENDER -->
+
+    <div class="field full">
+
+      <label>
+        শিক্ষক/শিক্ষিকা
+      </label>
+
+      <div class="choice-row">
+
+
+        <div class="choice">
+
+          <input
+            type="radio"
+            name="gender"
+            id="male"
+            value="শিক্ষক"
+          >
+
+          <label for="male">
+            শিক্ষক
+          </label>
+
+        </div>
+
+
+        <div class="choice">
+
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="শিক্ষিকা"
+          >
+
+          <label for="female">
+            শিক্ষিকা
+          </label>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- NAME -->
+
+    <div class="field full">
+
+      <label>
+        নাম
+      </label>
+
+      <input
+        id="teacherName"
+        required
+      >
+
+    </div>
+
+
+    <!-- FATHER -->
+
+    <div class="field">
+
+      <label>
+        পিতার নাম
+      </label>
+
+      <input
+        id="fatherName"
+        required
+      >
+
+    </div>
+
+
+    <!-- MOTHER -->
+
+    <div class="field">
+
+      <label>
+        মাতার নাম
+      </label>
+
+      <input
+        id="motherName"
+        required
+      >
+
+    </div>
+
+
+    <!-- ADDRESS -->
+
+    <div class="field full">
+
+      <label>
+        ঠিকানা
+      </label>
+
+      <input
+        id="teacherAddress"
+        placeholder="গ্রাম, ডাকঘর, উপজেলা, জেলা"
+        required
+      >
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     SECTION 3
+========================= -->
+
+<div class="section">
+
+  <div class="section-title">
+
+    <span class="icon">
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+      >
+
+        <path d="M4 20V7l8-4 8 4v13"/>
+
+        <path d="M8 20v-6h8v6M3 20h18"/>
+
+        <path d="M9 9h6"/>
+
+        <path d="M12 7v6"/>
+
+      </svg>
+
+    </span>
+
+    কেন্দ্র ও পাঠদানের তথ্য
+
+  </div>
+
+
+  <div class="grid">
+
+
+    <!-- CENTER TYPE -->
+
+    <div class="field full">
+
+      <label>
+        কেন্দ্রের ধরন
+      </label>
+
+
+      <div
+        class="choice-row"
+        style="grid-template-columns:1fr 1fr 1fr"
+      >
+
+
+        <div class="choice">
+
+          <input
+            type="radio"
+            name="centerType"
+            id="pre"
+            value="প্রাক প্রাথমিক"
+          >
+
+          <label for="pre">
+            প্রাক প্রাথমিক
+          </label>
+
+        </div>
+
+
+        <div class="choice">
+
+          <input
+            type="radio"
+            name="centerType"
+            id="easy"
+            value="সহজ কুরআন শিক্ষা"
+          >
+
+          <label for="easy">
+            সহজ কুরআন শিক্ষা
+          </label>
+
+        </div>
+
+
+        <div class="choice">
+
+          <input
+            type="radio"
+            name="centerType"
+            id="adult"
+            value="বয়স্ক কুরআন শিক্ষা"
+          >
+
+          <label for="adult">
+            বয়স্ক কুরআন শিক্ষা
+          </label>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- CENTER CODE -->
+
+    <div class="field">
+
+      <label>
+        কেন্দ্র কোড নম্বর
+      </label>
+
+      <input
+        id="centerCode"
+        inputmode="numeric"
+        required
+      >
+
+    </div>
+
+
+    <!-- ATTENDANCE -->
+
+    <div class="field">
+
+      <label>
+        উপস্থিতির হার (%)
+      </label>
+
+      <input
+        id="attendance"
+        type="number"
+        min="0"
+        max="100"
+        required
+      >
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     SECTION 4
+========================= -->
+
+<div class="section">
+
+  <div class="section-title">
+
+    <span class="icon">
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+      >
+
+        <rect
+          x="3"
+          y="4"
+          width="18"
+          height="17"
+          rx="2"
+        />
+
+        <path
+          d="M7 2v4M17 2v4M3 9h18"
+        />
+
+      </svg>
+
+    </span>
+
+    প্রত্যয়নকাল
+
+  </div>
+
+
+  <div class="period">
+
+
+    <div class="field">
+
+      <label>
+        শুরুর মাস
+      </label>
+
+      <input
+        id="startMonth"
+        type="month"
+        required
+      >
+
+    </div>
+
+
+    <div class="field">
+
+      <label>
+        শেষের মাস
+      </label>
+
+      <input
+        id="endMonth"
+        type="month"
+        required
+      >
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     SECTION 5
+========================= -->
+
+<div class="section">
+
+  <div class="section-title">
+
+    <span class="icon">
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+      >
+
+        <circle
+          cx="12"
+          cy="7"
+          r="3"
+        />
+
+        <path
+          d="M5 21c.6-4 2.9-6 7-6s6.4 2 7 6"
+        />
+
+        <path
+          d="M17 4.5l1.5 1.5L21 3.5"
+        />
+
+      </svg>
+
+    </span>
+
+    সভাপতির তথ্য
+
+  </div>
+
+
+  <div class="grid">
+
+
+    <div class="field full">
+
+      <label>
+        সভাপতির নাম
+      </label>
+
+      <input
+        id="presidentName"
+        required
+      >
+
+    </div>
+
+
+    <div class="field full">
+
+      <label>
+        মোবাইল নম্বর
+      </label>
+
+      <input
+        id="presidentMobile"
+        inputmode="tel"
+        required
+      >
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<!-- PREVIEW BUTTON -->
+
+<div class="sticky">
+
+  <button
+    type="button"
+    class="btn primary"
+    style="width:100%"
+    id="previewBtn"
+  >
+    প্রিভিউ দেখুন
+  </button>
+
+</div>
+
+
+  </form>
+
+</section>
+
+
+<!-- =========================
+     PREVIEW PANEL
+========================= -->
+
+<section class="panel">
+
+<div class="preview-wrap">
+
+
+<div class="preview-toolbar">
+
+  <strong>
+    প্রিভিউ
+  </strong>
+
+  <span
+    class="status"
+    id="saveStatus"
+  ></span>
+
+</div>
+
+
+<!-- =========================
+     A4 PAPER
+========================= -->
+
+<article
+  class="paper"
+  id="certificate"
+>
+
+
+<div class="paper-content">
+
+
+<!-- =========================
+     CERTIFICATE HEADER
+========================= -->
+
+<div class="doc-header">
+
+
+  <h3
+    class="doc-title"
+    id="pCenterName"
+  >
+    কেন্দ্রের নাম
+  </h3>
+
+
+  <div
+    class="doc-address"
+    id="pCenterAddress"
+  >
+    কেন্দ্রের ঠিকানা
+  </div>
+
+
+</div>
+
+
+<!-- TITLE -->
+
+<div class="cert-title">
+  প্রত্যয়নপত্র
+</div>
+
+
+<!-- =========================
+     BODY
+========================= -->
+
+<div class="doc-body">
+
+
+<!-- MAIN PARAGRAPH -->
+
+<p>
+
+এই মর্মে প্রত্যয়ন করা যাচ্ছে যে,
+
+<span
+  class="inline"
+  id="pTeacherName"
+>
+শিক্ষক/শিক্ষিকার নাম
+</span>,
+
+পিতা:
+
+<span
+  class="inline"
+  id="pFather"
+>
+পিতার নাম
+</span>,
+
+মাতা:
+
+<span
+  class="inline"
+  id="pMother"
+>
+মাতার নাম
+</span>,
+
+<span
+  class="inline"
+  id="pTeacherAddress"
+>
+ঠিকানা
+</span>,
+
+তিনি
+
+<span
+  class="inline strongspot"
+  id="pFoundation"
+>
+ইসলামিক ফাউন্ডেশন
+</span>
+
+কর্তৃক পরিচালিত
+
+<span
+  class="inline strongspot"
+  id="pProgram"
+>
+নৈতিকতা ও ধর্মীয় মূল্যবোধ উন্নয়নে মসজিদভিত্তিক শিশু ও গণশিক্ষা কার্যক্রম
+</span>
+
+(৮ম পর্যায়) প্রকল্পের
+
+<span
+  class="inline strongspot"
+  id="pType"
+>
+সহজ কুরআন শিক্ষা
+</span>
+
+কেন্দ্রের একজন নিয়মিত
+
+<span
+  class="inline"
+  id="pGender"
+>
+শিক্ষক
+</span>,
+
+<span
+  class="inline strongspot"
+  id="pCodeLabel"
+>
+কেন্দ্র কোড নং
+</span>ঃ
+
+<span
+  class="inline"
+  id="pCode"
+>
+—
+</span>,
+
+<span
+  class="inline strongspot"
+  id="pPeriod"
+>
+—
+</span>
+
+উক্ত কেন্দ্রে নিয়মিত পাঠদান করেছেন।
+
+অত্র শিক্ষা কেন্দ্রে শিক্ষার্থীর উপস্থিতির হার
+
+<span
+  class="inline"
+  id="pAttendance"
+>
+—
+</span>%
+
+যা অত্যন্ত সন্তোষজনক এবং পাঠদানের অগ্রগতির মানও বেশ ভাল।
+
+</p>
+
+
+<!-- RECOMMENDATION -->
+
+<p>
+
+এমতাবস্থায়,
+
+তার
+
+<span
+  class="inline"
+  id="pRecommendation"
+>
+—
+</span>
+
+সম্মানীভাতা প্রদানের জন্য বিশেষভাবে সুপারিশ করছি।
+
+</p>
+
+
+<!-- FINAL -->
+
+<p>
+
+আমি তাহার সার্বিক মঙ্গল কামনা করছি।
+
+</p>
+
+
+</div>
+
+
+<!-- =========================
+     SIGNATURE
+========================= -->
+
+<div class="signature">
+
+
+  <div class="role">
+    সভাপতি
+  </div>
+
+
+  <!-- Two blank signature spaces -->
+
+  <div class="blank"></div>
+  <div class="blank"></div>
+
+
+  <div
+    class="name"
+    id="pPresident"
+  >
+    সভাপতির নাম
+  </div>
+
+
+  <div id="pSignCenter">
+    কেন্দ্রের নাম
+  </div>
+
+
+  <div id="pSignLocation">
+    উপজেলা, জেলা
+  </div>
+
+
+  <div>
+    মোবাইল নংঃ
+
+    <span id="pMobile">
+      —
+    </span>
+  </div>
+
+
+</div>
+
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- =========================
+     MOBILE ACTIONS
+========================= -->
+
+<div class="mobile-actions">
+
+  <button
+    class="btn secondary"
+    id="mobileClear"
+  >
+    মুছুন
+  </button>
+
+
+  <button
+    class="btn primary"
+    id="mobilePdf"
+  >
+    PDF
+  </button>
+
+
+  <button
+    class="btn primary"
+    id="mobileWord"
+  >
+    Word
+  </button>
+
+</div>
+
+
+</div>
+
+
+<!-- TOAST -->
+
+<div
+  class="toast"
+  id="toast"
+></div>
+
+
+<script>
+
+/* =========================================================
+   BASIC HELPERS
+========================================================= */
+
+const $ = id => document.getElementById(id);
+
+
+/* =========================================================
+   STORAGE
+========================================================= */
+
+const STORAGE = 'certificate-builder-v2';
+
+
+/* =========================================================
+   FORM FIELDS
+========================================================= */
+
+const fields = [
+
+  'centerName',
+  'centerAddress',
+  'upazila',
+  'district',
+
+  'teacherName',
+  'fatherName',
+  'motherName',
+  'teacherAddress',
+
+  'centerCode',
+  'attendance',
+
+  'startMonth',
+  'endMonth',
+
+  'presidentName',
+  'presidentMobile'
+
+];
+
+
+/* =========================================================
+   BANGLA DIGITS
+========================================================= */
+
+const bnDigits = s => {
+
+  return String(s).replace(
+    /\d/g,
+    d => '০১২৩৪৫৬৭৮৯'[d]
+  );
+
+};
+
+
+/* =========================================================
+   MONTH NAMES
+========================================================= */
+
+const months = [
+
+  'জানুয়ারি',
+  'ফেব্রুয়ারি',
+  'মার্চ',
+  'এপ্রিল',
+  'মে',
+  'জুন',
+  'জুলাই',
+  'আগস্ট',
+  'সেপ্টেম্বর',
+  'অক্টোবর',
+  'নভেম্বর',
+  'ডিসেম্বর'
+
+];
+
+
+/* =========================================================
+   NUMBER WORDS
+========================================================= */
+
+const words = [
+
+  '',
+  'এক',
+  'দুই',
+  'তিন',
+  'চার',
+  'পাঁচ',
+  'ছয়',
+  'সাত',
+  'আট',
+  'নয়',
+  'দশ',
+  'এগারো',
+  'বারো',
+  'তেরো',
+  'চৌদ্দ',
+  'পনেরো',
+  'ষোলো',
+  'সতেরো',
+  'আঠারো',
+  'উনিশ',
+  'বিশ'
+
+];
+
+
+/* =========================================================
+   MONTH LABEL
+========================================================= */
+
+function monthLabel(v){
+
+  if(!v){
+    return '—';
+  }
+
+  let [y,m] = v.split('-');
+
+  return `${months[+m-1]}-${bnDigits(y)} খ্রি.`;
+
+}
+
+
+/* =========================================================
+   MONTH COUNT
+========================================================= */
+
+function count(a,b){
+
+  if(!a || !b){
+    return 1;
+  }
+
+  let [
+    ay,
+    am
+  ] = a.split('-').map(Number);
+
+  let [
+    by,
+    bm
+  ] = b.split('-').map(Number);
+
+  return Math.max(
+    1,
+    (by-ay)*12 + bm-am + 1
+  );
+
+}
+
+
+/* =========================================================
+   PERIOD TEXT
+========================================================= */
+
+function period(a,b){
+
+  let c = count(a,b);
+
+  let s = monthLabel(a);
+  let e = monthLabel(b);
+
+  if(c === 1){
+
+    return `${s} মাসে`;
+
+  }
+
+  return `${s} থেকে ${e.replace(' খ্রি.','')} মাস পর্যন্ত`;
+
+}
+
+
+/* =========================================================
+   RECOMMENDATION
+========================================================= */
+
+function rec(a,b){
+
+  let c = count(a,b);
+
+  let s = monthLabel(a);
+  let e = monthLabel(b);
+
+  if(c === 1){
+
+    return `${s} মাসের`;
+
+  }
+
+  return `${s} থেকে ${e.replace(' খ্রি.','')} মাস পর্যন্ত ${bnDigits(String(c).padStart(2,'0'))} (${words[c] || c}) মাসের`;
+
+}
+
+
+/* =========================================================
+   SAVE
+========================================================= */
+
+function save(){
+
+  let d = {};
+
+
+  fields.forEach(id => {
+
+    d[id] = $(id).value;
+
+  });
+
+
+  d.gender =
+    document.querySelector(
+      'input[name=gender]:checked'
+    )?.value || 'শিক্ষক';
+
+
+  d.centerType =
+    document.querySelector(
+      'input[name=centerType]:checked'
+    )?.value || 'সহজ কুরআন শিক্ষা';
+
+
+  localStorage.setItem(
+    STORAGE,
+    JSON.stringify(d)
+  );
+
+
+  /*
+    Intentionally no
+    "এই ডিভাইসে সংরক্ষিত"
+    text.
+  */
+
+  $('saveStatus').textContent = '';
+
+}
+
+
+/* =========================================================
+   LOAD
+========================================================= */
+
+function load(){
+
+  try{
+
+    let d = JSON.parse(
+      localStorage.getItem(STORAGE) || 'null'
+    );
+
+    if(!d){
+      return;
+    }
+
+
+    fields.forEach(id => {
+
+      if(d[id] != null){
+
+        $(id).value = d[id];
+
+      }
+
+    });
+
+
+    let g = document.querySelector(
+      `input[name=gender][value="${d.gender}"]`
+    );
+
+
+    let t = document.querySelector(
+      `input[name=centerType][value="${d.centerType}"]`
+    );
+
+
+    if(g){
+      g.checked = true;
+    }
+
+
+    if(t){
+      t.checked = true;
+    }
+
+
+  }catch(e){
+
+    console.error(e);
+
+  }
+
+}
+
+
+/* =========================================================
+   UPDATE PREVIEW
+========================================================= */
+
+function update(){
+
+  let g =
+    document.querySelector(
+      'input[name=gender]:checked'
+    )?.value || 'শিক্ষক';
+
+
+  let t =
+    document.querySelector(
+      'input[name=centerType]:checked'
+    )?.value || 'সহজ কুরআন শিক্ষা';
+
+
+  /* CENTER */
+
+  $('pCenterName').textContent =
+    $('centerName').value ||
+    'কেন্দ্রের নাম';
+
+
+  $('pCenterAddress').textContent =
+    $('centerAddress').value ||
+    'কেন্দ্রের ঠিকানা';
+
+
+  /* TEACHER */
+
+  $('pTeacherName').textContent =
+    $('teacherName').value ||
+    'শিক্ষক/শিক্ষিকার নাম';
+
+
+  $('pFather').textContent =
+    $('fatherName').value ||
+    'পিতার নাম';
+
+
+  $('pMother').textContent =
+    $('motherName').value ||
+    'মাতার নাম';
+
+
+  /*
+    Address is displayed exactly
+    as entered.
+
+    No automatic "গ্রাম:"
+    prefix is added.
+  */
+
+  $('pTeacherAddress').textContent =
+    $('teacherAddress').value ||
+    'ঠিকানা';
+
+
+  /* TYPE */
+
+  $('pType').textContent = t;
+
+
+  /* GENDER */
+
+  $('pGender').textContent = g;
+
+
+  /* CENTER CODE */
+
+  $('pCode').textContent =
+    $('centerCode').value
+      ? bnDigits($('centerCode').value)
+      : '—';
+
+
+  /* ATTENDANCE */
+
+  $('pAttendance').textContent =
+    $('attendance').value
+      ? bnDigits($('attendance').value)
+      : '—';
+
+
+  /* PERIOD */
+
+  $('pPeriod').textContent =
+    period(
+      $('startMonth').value,
+      $('endMonth').value
+    );
+
+
+  /* RECOMMENDATION */
+
+  $('pRecommendation').textContent =
+    rec(
+      $('startMonth').value,
+      $('endMonth').value
+    );
+
+
+  /* PRESIDENT */
+
+  $('pPresident').textContent =
+    $('presidentName').value ||
+    'সভাপতির নাম';
+
+
+  $('pSignCenter').textContent =
+    $('centerName').value ||
+    'কেন্দ্রের নাম';
+
+
+  $('pSignLocation').textContent =
+    `${$('upazila').value || 'উপজেলা'}, ${$('district').value || 'জেলা'}`;
+
+
+  /*
+    President mobile intentionally
+    stays English.
+  */
+
+  $('pMobile').textContent =
+    $('presidentMobile').value ||
+    '—';
+
+
+  save();
+
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+function toast(t){
+
+  $('toast').textContent = t;
+
+  $('toast').classList.add('show');
+
+  setTimeout(
+    () => $('toast').classList.remove('show'),
+    1600
+  );
+
+}
+
+
+/* =========================================================
+   PDF DOWNLOAD
+========================================================= */
+
+async function makePdf(){
+
+  update();
+
+  toast('PDF প্রস্তুত হচ্ছে…');
+
+
+  /*
+    Wait for SolaimanLipi
+  */
+
+  await document.fonts.ready;
+
+
+  let el = $('certificate');
+
+
+  let canvas = await html2canvas(
+    el,
+    {
+      scale:3,
+      useCORS:true,
+      backgroundColor:'#fff',
+      logging:false
+    }
+  );
+
+
+  let {
+    jsPDF
+  } = window.jspdf;
+
+
+  let pdf = new jsPDF({
+
+    orientation:'portrait',
+    unit:'mm',
+    format:'a4',
+    compress:true
+
+  });
+
+
+  pdf.addImage(
+
+    canvas.toDataURL(
+      'image/jpeg',
+      .98
+    ),
+
+    'JPEG',
+
+    0,
+    0,
+
+    210,
+    297,
+
+    undefined,
+    'FAST'
+
+  );
+
+
+  let n =
+    (
+      $('teacherName').value ||
+      'শিক্ষক'
+    ).replace(
+      /[\\/:*?"<>|]/g,
+      '_'
+    );
+
+
+  pdf.save(
+    `প্রত্যয়নপত্র-${n}.pdf`
+  );
+
+
+  toast('PDF ডাউনলোড হয়েছে');
+
+}
+
+
+/* =========================================================
+   WORD DOWNLOAD
+========================================================= */
+
+function makeWord(){
+
+  update();
+
+
+  let clone =
+    $('certificate').cloneNode(true);
+
+
+  let css = `
+
+    @page{
+      size:A4;
+      margin:0;
+    }
+
+    body{
+      margin:0;
+      font-family:'SolaimanLipi','Solaiman Lipi',serif;
+    }
+
+    .paper{
+      width:210mm;
+      height:297mm;
+      padding:12.7mm;
+      box-sizing:border-box;
+      position:relative;
+    }
+
+    .doc-title{
+      font-size:20px;
+      font-weight:700;
+      text-align:center;
+    }
+
+    .doc-address{
+      font-size:13px;
+      text-align:center;
+      border-bottom:1px solid #111;
+      padding-bottom:7px;
+    }
+
+    .cert-title{
+      text-align:center;
+      font-size:23px;
+      font-weight:700;
+      margin:17px 0 13px;
+    }
+
+    .doc-body{
+      font-size:14px;
+      line-height:1.62;
+      text-align:justify;
+    }
+
+    .doc-body p{
+      margin:0 0 7px;
+    }
+
+    .doc-body p:first-child,
+    .doc-body p:nth-last-child(2),
+    .doc-body p:last-child{
+      text-indent:2em;
+    }
+
+    .strongspot{
+      font-weight:700;
+    }
+
+    .inline{
+      font-weight:400;
+    }
+
+    .signature{
+      margin-top:50px;
+      margin-left:auto;
+      width:44%;
+      text-align:center;
+      font-size:14px;
+      line-height:1.45;
+    }
+
+    .signature .blank{
+      height:4px;
+    }
+
+    .signature .name{
+      font-weight:700;
+    }
+
+    .signature #pMobile{
+      font-family:Arial,sans-serif;
+      font-weight:400;
+    }
+
+  `;
+
+
+  let html = `
+
+    <!doctype html>
+
+    <html>
+
+      <head>
+
+        <meta charset="utf-8">
+
+        <style>
+          ${css}
+        </style>
+
+      </head>
+
+      <body>
+
+        ${clone.outerHTML}
+
+      </body>
+
+    </html>
+
+  `;
+
+
+  let blob = new Blob(
+
+    [
+      '\ufeff',
+      html
+    ],
+
+    {
+      type:'application/msword'
+    }
+
+  );
+
+
+  let url =
+    URL.createObjectURL(blob);
+
+
+  let a =
+    document.createElement('a');
+
+
+  a.href = url;
+
+
+  a.download =
+    `প্রত্যয়নপত্র-${(
+      $('teacherName').value ||
+      'শিক্ষক'
+    )}.doc`;
+
+
+  a.click();
+
+
+  URL.revokeObjectURL(url);
+
+
+  toast('Word ফাইল ডাউনলোড হয়েছে');
+
+}
+
+
+/* =========================================================
+   CLEAR ALL
+========================================================= */
+
+function clearAll(){
+
+  if(
+    !confirm(
+      'সব সংরক্ষিত তথ্য মুছে ফেলবেন?'
+    )
+  ){
+    return;
+  }
+
+
+  localStorage.removeItem(
+    STORAGE
+  );
+
+
+  $('form').reset();
+
+
+  /*
+    Default gender
+  */
+
+  $('male').checked = true;
+
+
+  /*
+    Default center type
+  */
+
+  $('easy').checked = true;
+
+
+  update();
+
+
+  toast(
+    'সব তথ্য মুছে ফেলা হয়েছে'
+  );
+
+}
+
+
+/* =========================================================
+   EVENTS
+========================================================= */
+
+$('form').addEventListener(
+  'input',
+  update
+);
+
+
+$('form').addEventListener(
+  'change',
+  update
+);
+
+
+/* Preview */
+
+$('previewBtn').onclick = () => {
+
+  update();
+
+  $('certificate').scrollIntoView({
+
+    behavior:'smooth',
+    block:'center'
+
+  });
+
+  toast(
+    'প্রিভিউ আপডেট হয়েছে'
+  );
+
+};
+
+
+/* Desktop PDF */
+
+$('pdfBtn').onclick =
+  makePdf;
+
+
+/* Mobile PDF */
+
+$('mobilePdf').onclick =
+  makePdf;
+
+
+/* Desktop Word */
+
+$('wordBtn').onclick =
+  makeWord;
+
+
+/* Mobile Word */
+
+$('mobileWord').onclick =
+  makeWord;
+
+
+/* Desktop Clear */
+
+$('clearBtn').onclick =
+  clearAll;
+
+
+/* Mobile Clear */
+
+$('mobileClear').onclick =
+  clearAll;
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+load();
+
+
+/*
+  Default gender
+*/
+
+if(
+  !document.querySelector(
+    'input[name=gender]:checked'
+  )
+){
+
+  $('male').checked = true;
+
+}
+
+
+/*
+  Default center type
+*/
+
+if(
+  !document.querySelector(
+    'input[name=centerType]:checked'
+  )
+){
+
+  $('easy').checked = true;
+
+}
+
+
+/*
+  Initial preview
+*/
+
+update();
+
+</script>
+
+</body>
+  </html>
